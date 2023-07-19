@@ -7,7 +7,7 @@ Since late 2016, a research effort has been pursued at Sandia National Laborator
 
 ## Description
 
-This repository contains the source code for (and results from) a Python program called `barc` whose purpose is to enumerate and categorize the possible BARCS functional elements having two internal states and up to three I/O ports. It takes a few hours to run.  Complete output from the program is in the file `RESULTS.txt` and the results are summarized in `SUMMARY.txt`.
+This repository contains the source code for (and results from) a Python program called `barc` whose purpose is to enumerate and categorize the possible BARCS functional elements having two internal states and up to three I/O ports. It takes a few hours to run.  Complete output from the program is in the file `RESULTS.txt` and the results are summarized in `SUMMARY.txt`. Results are discussed in reference [4] below.
 
 ## References
 

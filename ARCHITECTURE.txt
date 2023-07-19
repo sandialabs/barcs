@@ -1,0 +1,48 @@
+ARCHITECTURE
+============
+
+Notes on the software architecture of barc.py, the BARC Element Classifier.
+
+We avoid using type hints in this program, to minimize the amount of dummy/forward class definitions that are required, and in general to eliminate unnecessary import dependencies.
+
+As a result, many of the modules in the program reside at the bottommost code layer, layer #0, that is, requiring no imports of any other custom modules whatsoever.  
+
+Further, the five modules that reside on code layer #1 are only there because they import the "utilities" module.
+
+One of the key modules in the system is "deviceFunction", which defines the class for objects representing devices with specific functional element behaviors.  It sits on layer #2 because it imports the transitionFunction module from layer #1.
+
+Built on top of deviceFunction module is deviceType, which knows how to enumerate all of the possible device functions of a given type.  It can probably be considered the central module of the whole system, since it imports nearly all of the lower-level modules.
+
+And built on top of deviceType is the main program.
+
+The layer cake diagram of barc program modules is shown below.
+
+Each module is assigned to the lowest layer such that every module it imports is assigned to a lower layer.
+
+            +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+
+            |   MODULE NAMES & DESCRIPTIONS                             | MODULES IMPORTED                                  |
+            +===========================================================+===================================================|
+LAYER #4:   |   barc (top-level program)                                | deviceType, stateSet, symmetryGroup, utilities    |
+            +-----------------------------------------------------------+---------------------------------------------------+
+LAYER #3:   |   deviceType - Classes of devices w. given dimensions.    | characterClass, deviceDimensions, deviceFunction, |
+            |                                                           | dictPermuter, pulseAlphabet, pulseType, signal-   |
+            |                                                           | Character, symmetryTransform, syndrome, transi-   |
+            |                                                           | tionFunction, utilities                           |
+            +-----------------------------------------------------------+---------------------------------------------------+
+LAYER #2:   |   deviceFunction - Device w. a specific trans. func.      | transitionFunction, utilities                     |
+            |   stateSet - Identifies a set of possible dev. states.    | state                                             |
+            +-----------------------------------------------------------+---------------------------------------------------+
+LAYER #1:   |   pulseAlphabet - Sets of pulse types.                    | utilities                                         |
+            |   pulseType - Identifies a specific type of pulse.        | utilities                                         |
+            |   state - Identifies an internal state of a device.       | utilities                                         |
+            |   symmetryGroup - Equivalence classes of dev. funcs.      | utilities                                         |
+            |   transitionFunction - Maps input -> output syndromes.    | utilities                                         |
+            +-----------------------------------------------------------+---------------------------------------------------|
+LAYER #0:   |   characterClass - Defines a type of signal characters.   |                                                   |
+            |   deviceDimensions - Defines size parameters of devices.  |                                                   |
+            |   dictPermuter - Used to enumerate transition functions.  |                                                   |
+            |   signalCharacter - Identifies a type of I/O event.       |                                                   |
+            |   symmetryTransform - Transforms a device function.       |                                                   |
+            |   syndrome - Identifies an initial or final condition.    |                                                   |
+            |   utilities - Defines some low-level utility functions.   |                                                   |
+            +~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+

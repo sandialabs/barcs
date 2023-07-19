@@ -9,122 +9,122 @@ and are non-trivial (states are utilized in a way that matters) and atomic
 (can't be broken into two independent devices).
 
 
-	Flux-Polarized Case:
-	~~~~~~~~~~~~~~~~~~~~
-	
-	This refers to devices with two internal states each having one flux
-	quantum but with opposite flux polarities; the two states are of course
-	exchanged under flux negation.
+    Flux-Polarized Case:
+    ~~~~~~~~~~~~~~~~~~~~
+    
+    This refers to devices with two internal states each having one flux
+    quantum but with opposite flux polarities; the two states are of course
+    exchanged under flux negation.
 
 
-		1-port flux-polarized case:
-		---------------------------
-		
-		There are 2*1*2=4 syndromes, and thus 4! = 24 raw transition functions.
-		But only two of them are flux-conserving. And as we already knew, the 
-		only non-trivial behavior is the RM cell. (The other behavior is a 
-		reflector that neither utilizes nor modifies its internal state.)
+        1-port flux-polarized case:
+        ---------------------------
+        
+        There are 2*1*2=4 syndromes, and thus 4! = 24 raw transition functions.
+        But only two of them are flux-conserving. And as we already knew, the 
+        only non-trivial behavior is the RM cell. (The other behavior is a 
+        reflector that neither utilizes nor modifies its internal state.)
 
 
-		2-port flux-polarized case:
-		---------------------------
-		
-		There are 2*2*2=8 syndromes, thus 8! = 40,320 raw transition functions.
-		Of these, only 96 of them satisfy the flux conservation constraint.
-		This then reduces down to 10 nontrivial device functions satisfying all 
-		constraints. These sort into 7 equivalence groups with the following
-		size distribution:
-		
-			Group	# of	# of
-			Size	Grps.	Fncs.
-			=====	=====	=====
-			  1		  4		  4
-			  2		  3		  6
-			-----	-----	-----
-			TOTAL:	  7		 10
-		
-		
-		3-port flux-polarized case:
-		---------------------------
-		
-		There are 2*3*2=12 syndromes, so 12! = 479,001,600 raw transition func-
-		tions.
-		  * 25,920 of them are flux-conserving device functions.
-		  * 288 of those device functions are flux-negation symmetric.
-		  * 245 (all but 43) of those device functions are atomic functional 
-			primitives.
-		  * 219 (all but 26) of those device functions use the state non-tri-
-			vially.
-		These sort into 39 equivalence groups, distributed as follows:
+        2-port flux-polarized case:
+        ---------------------------
+        
+        There are 2*2*2=8 syndromes, thus 8! = 40,320 raw transition functions.
+        Of these, only 96 of them satisfy the flux conservation constraint.
+        This then reduces down to 10 nontrivial device functions satisfying all 
+        constraints. These sort into 7 equivalence groups with the following
+        size distribution:
+        
+            Group   # of    # of
+            Size    Grps.   Fncs.
+            =====   =====   =====
+              1       4       4
+              2       3       6
+            -----   -----   -----
+            TOTAL:    7      10
+        
+        
+        3-port flux-polarized case:
+        ---------------------------
+        
+        There are 2*3*2=12 syndromes, so 12! = 479,001,600 raw transition func-
+        tions.
+          * 25,920 of them are flux-conserving device functions.
+          * 288 of those device functions are flux-negation symmetric.
+          * 245 (all but 43) of those device functions are atomic functional 
+            primitives.
+          * 219 (all but 26) of those device functions use the state non-tri-
+            vially.
+        These sort into 39 equivalence groups, distributed as follows:
 
-			Group	# of	# of
-			Size	Grps.	Fncs.
-			=====	=====	=====
-			   1	   1	   1
-			   2	   4	   8
-			   3	   6	  18
-			   6	  24	 144
-			  12	   4	  48
-			-----	-----	-----
-			TOTAL:    39	 219
-
-
-	Flux-Neutral Case:
-	~~~~~~~~~~~~~~~~~~
-	
-	This refers to devices with two internal states each having zero net 
-	flux, but where the two states are still exchanged under flux negation.
-	We analyze the positive-fluxon sector only, since the behavior for the 
-	negative-fluxon sector follows from it via flux-negation symmetry.
+            Group   # of    # of
+            Size    Grps.   Fncs.
+            =====   =====   =====
+               1       1       1
+               2       4       8
+               3       6      18
+               6      24     144
+              12       4      48
+            -----   -----   -----
+            TOTAL:    39     219
 
 
-		1-port flux-neutral case:
-		-------------------------
-
-		Here, there are only 2 syndromes, thus only 2 permutations. They are 
-		both flux-conserving (since all unary operations on flux-neutral devices 
-		are).  However, neither of them uses the state non-trivially (they 
-		can't, since there's only 1 port and 1 signal character, so nothing to 
-		affect). The two devices are just a wire (trivial) and a pair of reflec-
-		tors (non-atomic).
+    Flux-Neutral Case:
+    ~~~~~~~~~~~~~~~~~~
+    
+    This refers to devices with two internal states each having zero net 
+    flux, but where the two states are still exchanged under flux negation.
+    We analyze the positive-fluxon sector only, since the behavior for the 
+    negative-fluxon sector follows from it via flux-negation symmetry.
 
 
-		2-port flux-neutral case:
-		-------------------------
+        1-port flux-neutral case:
+        -------------------------
 
-		Here, there are 1*2*2 = 4 syndromes, thus 4! = 24 permutations of the
-		transition function. All flux-conserving of course. 16 of them use the
-		state non-trivially (aren't state-exchange symmetric). And 14 of those
-		are atomic functional primitives that change the state dynamically. 
-		These sort into 4 equivalence groups with the following size distribu-
-		tion:
-		
-			Group	# of	# of
-			Size	Grps.	Fncs.
-			=====	=====	=====
-			  2		  3       6
-			  8		  1	      8
-			-----	-----	-----
-			TOTAL:    4		 14
+        Here, there are only 2 syndromes, thus only 2 permutations. They are 
+        both flux-conserving (since all unary operations on flux-neutral devices 
+        are).  However, neither of them uses the state non-trivially (they 
+        can't, since there's only 1 port and 1 signal character, so nothing to 
+        affect). The two devices are just a wire (trivial) and a pair of reflec-
+        tors (non-atomic).
 
 
-		3-port flux-neutral case:
-		-------------------------
+        2-port flux-neutral case:
+        -------------------------
 
-		Here, there are 1*3*2 = 6 syndromes, so 6! = 720 permutations (all flux-
-		conserving).  Of these, 653 are atomic primitives, 627 of those change 
-		the state dynamically, and 600 of those use the state non-trivially. As 
-		we've known for a while, these 600 sort into 45 equivalence groups like 
-		so:
-		
-			Group	# of	# of
-			Size	Grps.	Fncs.
-			=====	=====	=====
-			  2       1        2
-			  4		  1		   4
-			  6		  9       54
-			 12		 23		 276
-			 24		 11		 264
-			-----	-----	-----
-			TOTAL:   45		 600
-		
+        Here, there are 1*2*2 = 4 syndromes, thus 4! = 24 permutations of the
+        transition function. All flux-conserving of course. 16 of them use the
+        state non-trivially (aren't state-exchange symmetric). And 14 of those
+        are atomic functional primitives that change the state dynamically. 
+        These sort into 4 equivalence groups with the following size distribu-
+        tion:
+        
+            Group   # of    # of
+            Size    Grps.   Fncs.
+            =====   =====   =====
+              2       3       6
+              8       1       8
+            -----   -----   -----
+            TOTAL:    4      14
+
+
+        3-port flux-neutral case:
+        -------------------------
+
+        Here, there are 1*3*2 = 6 syndromes, so 6! = 720 permutations (all flux-
+        conserving).  Of these, 653 are atomic primitives, 627 of those change 
+        the state dynamically, and 600 of those use the state non-trivially. As 
+        we've known for a while, these 600 sort into 45 equivalence groups like 
+        so:
+        
+            Group   # of    # of
+            Size    Grps.   Fncs.
+            =====   =====   =====
+              2       1        2
+              4       1        4
+              6       9       54
+             12      23      276
+             24      11      264
+            -----   -----   -----
+            TOTAL:   45      600
+        

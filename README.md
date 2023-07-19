@@ -1,5 +1,5 @@
 # BARCS
-_**Ballistic Asynchronous Reversible Computing with Superconductors**_ -- Tool for functional element enumeration and classification.
+_**Ballistic Asynchronous Reversible Computing with Superconductors**_ -- `barc` tool for BARCS functional element enumeration and classification.
 
 ## Background
 

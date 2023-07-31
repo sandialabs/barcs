@@ -625,8 +625,8 @@ def characterizeDeviceFunctions(nTerminals, conserveFlux=True):
 
     # Next, we'll consider the state-exchange transform to be in scope, but
     # *only* if either we aren't bothering to conserve flux, or we're currently
-    # studying neutral-state devices (for which a state exchange won't affect)
-    # flux conservation. This is because, in the case of polarized states, it's
+    # studying neutral-state devices (for which a state exchange won't affect
+    # flux conservation). This is because, in the case of polarized states, it's
     # impossible for both a given function and its state-exchanged dual to both
     # conserve flux, unless the state is never changed (non-primitive device).
     if (not conserveFlux) or (whichCategory is NEUTRAL_STATE):

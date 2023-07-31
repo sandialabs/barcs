@@ -1,5 +1,5 @@
 # BARCS
-_**Ballistic Asynchronous Reversible Computing with Superconductors**_ project -- The BARCS repository contains the RevComp team's "`barc`" tool for BARCS functional element enumeration and classification.
+_**Ballistic Asynchronous Reversible Computing with Superconductors**_ project -- The BARCS repository contains the RevComp team's "**`barc`**" tool for BARCS functional element enumeration and classification.
 
 ## Background
 

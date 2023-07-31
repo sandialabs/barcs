@@ -3,7 +3,7 @@ _**Ballistic Asynchronous Reversible Computing with Superconductors**_ project -
 
 ## Background
 
-Since late 2016, a research effort has been pursued at Sandia National Laboratories to develop and explore a novel _asynchronous_ model of ballistic reversible computing (ARC or ABRC); this research has been described in a number of papers and talks, some of which are listed below. We have been exploring possible implementations of ABRC in superconducting circuits; this sub-effort is called **B**allistic **A**synchronous **R**eversible **C**omputing with **S**uperconductors (BARCS).
+Since late 2016, a research effort has been pursued at Sandia National Laboratories to develop and explore a novel _asynchronous_ model of ballistic reversible computing (ARC or ABRC); this research has been described in a number of papers and talks, some of which are listed below. We have mainly been exploring possible implementations of ABRC in superconducting circuits; this sub-effort is called **B**allistic **A**synchronous **R**eversible **C**omputing with **S**uperconductors (BARCS).
 
 ## Description
 

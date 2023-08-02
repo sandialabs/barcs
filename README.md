@@ -10,9 +10,10 @@ Since late 2016, a research effort has been pursued at Sandia National Laborator
 
 This repository contains the source code for (and results from) a Python program called`barc`whose purpose is to enumerate and categorize the possible BARCS functional elements having two internal states and up to three I/O ports. It takes a few hours to run.  Complete output from the program is in the file[`results/RESULTS.txt`](results/RESULTS.txt)and the results are summarized in[`results/SUMMARY.txt`](results/SUMMARY.txt). Results are also discussed in reference [4] below.
 
-## References
+## Bibliography
 
 1. Michael Frank, (2017). "Asynchronous Ballistic Reversible Computing" 2017 IEEE International Conference on Rebooting Computing, ICRC 2017 – Proceedings. [doi:10.1109/ICRC.2017.8123659](https://doi.org/10.1109/ICRC.2017.8123659).
 2. Michael Frank, Rupert Lewis, Nancy Missert, Matthaeus Wolak, Michael Henry, (2019). "Asynchronous Ballistic Reversible Fluxon Logic" _IEEE Transactions on Applied Superconductivity_. [doi:10.1109/tasc.2019.2904962](https://doi.org/10.1109/tasc.2019.2904962).
 3. Michael Frank, Rupert Lewis, Nancy Missert, M. Henry, Matthaeus Wolak, Erik Debenedictis, (2019). "Semi-Automated Design of Functional Elements for a New Approach to Digital Superconducting Electronics: Methodology and Preliminary Results" ISEC 2019 – International Superconductive Electronics Conference. [doi:10.1109/ISEC46533.2019.8990900](https://doi.org/10.1109/ISEC46533.2019.8990900).
 4. M. P. Frank and R. M. Lewis, "Ballistic Asynchronous Reversible Computing in Superconducting Circuits," 2022 IEEE International Conference on Rebooting Computing (ICRC), San Francisco, CA, USA, 2022, pp. 30-35. [doi:10.1109/ICRC57508.2022.00018](https://doi.org/10.1109/ICRC57508.2022.00018).
+5. A substantial number of related presentations from the last few years can be found on [my homepage](https://www.sandia.gov/ccr/staff/michael-p-frank/).

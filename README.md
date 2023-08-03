@@ -1,5 +1,5 @@
 ![Photomicrograph of the Reversible Memory (RM) cell.](images/RM-cell-4.png)
-<center>Test circuit for the BARCS Reversible Memory (RM) cell fabricated in 2020</center>
+<center>(Photo credit: Nancy Missert) Test circuit for the BARCS Reversible Memory (RM) cell fabricated in 2020</center>
 
 # BARCS
 _**Ballistic Asynchronous Reversible Computing with Superconductors**_ project.

@@ -1,3 +1,5 @@
+![Photomicrograph of the Reversible Memory (RM) cell.](images/RM-cell-4.png)
+
 # BARCS
 _**Ballistic Asynchronous Reversible Computing with Superconductors**_ project.
 The BARCS repository contains the RevComp team's`barc`tool for BARCS functional element enumeration and classification.

@@ -85,8 +85,7 @@ and are non-trivial (states are utilized in a way that matters) and atomic
         both flux-conserving (since all unary operations on flux-neutral devices 
         are).  However, neither of them uses the state non-trivially (they 
         can't, since there's only 1 port and 1 signal character, so nothing to 
-        affect). The two devices are just a wire (trivial) and a pair of reflec-
-        tors (non-atomic).
+        affect). Thus, there are no interesting devices in this class.
 
 
         2-port flux-neutral case:
